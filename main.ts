@@ -30,6 +30,46 @@ input.onButtonPressed(Button.A, function () {
         . . . . .
         `)
 })
+input.onGesture(Gesture.Shake, function () {
+    zwaaien = false
+    while (true) {
+        basic.showLeds(`
+            . # . . .
+            . . . . #
+            . . . . .
+            # # . . #
+            # # # # #
+            `)
+        basic.showLeds(`
+            . . . # .
+            . # . . .
+            . . . . #
+            # # . . #
+            # # # # #
+            `)
+        basic.showLeds(`
+            # . . . .
+            . . . # .
+            . # . . .
+            # # . . #
+            # # # # #
+            `)
+        basic.showLeds(`
+            . . . . .
+            # . . . .
+            . . . # .
+            # # . . #
+            # # # # #
+            `)
+        basic.showLeds(`
+            . . . . #
+            . . . . .
+            # . . . .
+            # # . # #
+            # # # # #
+            `)
+    }
+})
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     zwaaien = false
     while (true) {
